@@ -5,10 +5,44 @@ $gold: #cca13f;
 $navy-blue: #161736;
 $grey: #f3f3f3;
 
+.precision {
+  color: $gold;
+}
+
+.active {
+  color: $gold;
+}
+
+.fa-phone-alt {
+  color: $gold;
+}
+
 header {
   width: 100%;
 
   .top-header {
-    display: flex;
+    width: 100%;
+    background-color: $white;
+
+    .top-header-div {
+      display: flex;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 60px 0;
+      justify-content: space-between;
+      font-size: 1.6rem;
+
+      ul {
+        display: flex;
+
+        li {
+          margin: 0 5px;
+        }
+
+        .nav-link:hover {
+          color: $gold;
+        }
+      }
+    }
   }
 }
