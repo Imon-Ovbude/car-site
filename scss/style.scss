@@ -1,1 +1,14 @@
 @import 'reset';
+$white: #fff;
+$dark-blue: #0f1025;
+$gold: #cca13f;
+$navy-blue: #161736;
+$grey: #f3f3f3;
+
+header {
+  width: 100%;
+
+  .top-header {
+    display: flex;
+  }
+}
