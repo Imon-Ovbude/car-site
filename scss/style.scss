@@ -130,15 +130,16 @@ header {
           .angle-right {
             margin-right: 10px;
             animation: slideRight 1000s ease-in infinite;
+            position: absolute;
           }
 
           @keyframes slideRight {
             0% {
-              font-size: 1rem;
+              transform: translateX(0);
             }
 
             100% {
-              font-size: 2rem;
+              transform: translateX(20px);
             }
           }
         }
