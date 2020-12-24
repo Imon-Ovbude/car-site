@@ -45,10 +45,6 @@ header {
       ul {
         display: flex;
 
-        li {
-          margin: 0 5px;
-        }
-
         .nav-link-1 {
           margin: 0 15px;
         }
@@ -112,18 +108,18 @@ header {
         align-items: flex-start;
         line-height: 1.2;
 
-        h3 {
+        .carousel-h3 {
           font-size: 2rem;
           color: $gold;
         }
 
-        p {
+        .carousel-p {
           font-size: 3rem;
           margin-bottom: 50px;
           font-weight: 700;
         }
 
-        button {
+        .carousel-button {
           border: none;
           font-size: 1.4rem;
           padding: 15px 30px;
@@ -131,8 +127,19 @@ header {
           background-color: $gold;
           color: $white;
 
-          i {
+          .angle-right {
             margin-right: 10px;
+            animation: slideRight 1000s ease-in infinite;
+          }
+
+          @keyframes slideRight {
+            0% {
+              font-size: 1rem;
+            }
+
+            100% {
+              font-size: 2rem;
+            }
           }
         }
       }
