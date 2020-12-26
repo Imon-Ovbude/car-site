@@ -148,3 +148,47 @@ header {
     }
   }
 }
+
+// Statement Section
+.statement-section {
+  background-color: $dark-blue;
+  height: 500px;
+
+  .statement-wrapper {
+    display: grid;
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    color: $white;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    .statement-first-div {
+      .welcome {
+        color: $gold;
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 5rem;
+        font-weight: bold;
+      }
+    }
+
+    .statement-second-div {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+
+      p {
+        line-height: 1.2;
+        font-size: 1.5rem;
+
+        span {
+          color: $gold;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
