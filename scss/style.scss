@@ -87,8 +87,8 @@ header {
   }
 }
 
-// ----------Main Section
-.main {
+// ----------Carousel Section
+.carousel-section {
   .carousel {
     max-height: 800px;
   }
@@ -128,9 +128,10 @@ header {
           color: $white;
 
           .angle-right {
-            margin-right: 10px;
-            animation: slideRight 1000s ease-in infinite;
-            position: absolute;
+            width: 40px;
+            position: relative;
+            text-align: start;
+            animation: slideRight;
           }
 
           @keyframes slideRight {
