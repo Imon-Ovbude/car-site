@@ -9,6 +9,10 @@
   color: $gold;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 // ---------HEADER SECTION
 header {
   width: 100%;
@@ -231,6 +235,50 @@ header {
       .attribute-div:nth-child(2) {
         border-left: 2px solid #9fa0a0;
         border-right: 2px solid #9fa0a0;
+      }
+    }
+  }
+}
+
+.second-statement {
+  background-color: $dark-blue;
+  color: $white;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .second-statement-wrapper {
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 0 auto;
+
+    .second-statement-first-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 10px;
+
+      .problems {
+        font-size: 2rem;
+      }
+
+      .problems-question-statement {
+        font-size: 4rem;
+        font-weight: bold;
+      }
+    }
+
+    .second-statement-second-div {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+      font-size: 1.6rem;
+      line-height: 1.2;
+
+      .left-div {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
       }
     }
   }
