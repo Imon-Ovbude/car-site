@@ -1,9 +1,5 @@
 @import 'reset';
-$white: #fff;
-$dark-blue: #0f1025;
-$gold: #cca13f;
-$navy-blue: #161736;
-$grey: #bdb8b8;
+@import 'variables';
 
 .precision {
   color: $gold;
@@ -188,6 +184,29 @@ header {
           color: $gold;
           font-weight: bold;
         }
+      }
+    }
+  }
+}
+
+// Emblem Section
+.emblem-section {
+  background-color: $lightGrey;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .emblem-wrapper {
+    max-width: 1400px;
+
+    .image-wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 3px;
+
+      img {
+        max-width: 100%;
+        height: auto;
       }
     }
   }
