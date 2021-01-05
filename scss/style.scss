@@ -198,6 +198,7 @@ header {
 
   .emblem-wrapper {
     max-width: 1400px;
+    margin-top: 200px;
 
     .image-wrapper {
       display: grid;
@@ -207,6 +208,37 @@ header {
       img {
         max-width: 100%;
         height: auto;
+      }
+    }
+
+    .attributes {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 1400px;
+
+      .attribute-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.7rem;
+        height: 150px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        svg {
+          margin-right: 10px;
+          font-size: 3rem;
+          fill: #9fa0a0;
+        }
+
+        span {
+          font-weight: bold;
+        }
+      }
+
+      .attribute-div:nth-child(2) {
+        border-left: 2px solid #9fa0a0;
+        border-right: 2px solid #9fa0a0;
       }
     }
   }
