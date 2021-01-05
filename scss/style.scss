@@ -1,19 +1,11 @@
 @import 'reset';
 @import 'variables';
 
-.precision {
-  color: $gold;
-}
-
-.active {
-  color: $gold;
-}
-
-.fa-phone-alt {
-  color: $gold;
-}
-
-.fa-check-double {
+.precision,
+.active,
+.fa-phone-alt,
+.fa-check-double,
+.problems {
   color: $gold;
 }
 
