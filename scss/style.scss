@@ -37,11 +37,10 @@ header {
       ul {
         display: flex;
 
-        .nav-link-1 {
-          margin: 0 15px;
-        }
-
         .nav-link {
+          padding: 0;
+          margin: 0 10px;
+
           a {
             color: $black;
           }
@@ -49,6 +48,14 @@ header {
           a:hover {
             color: $gold;
           }
+        }
+
+        .nav-link-1 {
+          margin: 0 30px !important;
+        }
+
+        .phone-number {
+          margin-left: 10px;
         }
       }
     }
@@ -248,7 +255,7 @@ header {
 
 // Second Statement Section
 .second-statement {
-  background-color: $dark-blue;
+  background-color: $navy-blue;
   color: $white;
   padding-top: 60px;
   padding-bottom: 60px;
