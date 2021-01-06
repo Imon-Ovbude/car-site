@@ -41,8 +41,14 @@ header {
           margin: 0 15px;
         }
 
-        .nav-link:hover {
-          color: $gold;
+        .nav-link {
+          a {
+            color: $black;
+          }
+
+          a:hover {
+            color: $gold;
+          }
         }
       }
     }
