@@ -297,3 +297,67 @@ header {
     }
   }
 }
+
+//  Form Map Section
+.form-map-section {
+  background-color: $dark-blue;
+  padding-top: 150px;
+
+  .form-map-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .form-map-title {
+      line-height: 1.2;
+      margin-bottom: 20px;
+
+      .form-map-title-top {
+        font-size: 1.7rem;
+      }
+
+      .form-map-title-bottom {
+        font-size: 2rem;
+        color: $white;
+      }
+    }
+
+    .form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      font-size: 1.8rem;
+
+      .input-style {
+        width: 90%;
+        border: none;
+        border-bottom: 2px solid $white;
+        background-color: $dark-blue;
+        color: $white;
+        margin-bottom: 30px;
+        cursor: pointer;
+      }
+
+      .input-style.select {
+        option.option {
+          font-size: 1rem;
+        }
+      }
+
+      .input-style::placeholder {
+        color: $lightGrey;
+        font-size: 1.6rem;
+      }
+
+      .input-style.date:focus,
+      .input-style.date:hover {
+        color: white;
+      }
+
+      .input-style:focus,
+      .input-style:hover {
+        outline: none;
+      }
+    }
+  }
+}

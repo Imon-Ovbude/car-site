@@ -336,53 +336,101 @@
           </div>
         </div>
       </section>
+
+      <!-- Form Map Section -->
       <section class="form-map-section">
         <div class="form-map-wrapper">
-          <form>
-            <div>
-              <input type="text" id="name" placeholder="Your Full Name" />
-              <input type="email" id="email" placeholder="Your Email Address" />
-              <input
-                type="tel"
-                id="tel"
-                minlength="10"
-                maxlength="10"
-                placeholder="Your Phone Number"
-              />
+          <div>
+            <div class="form-map-title">
+              <p class="form-map-title-top precision">
+                YOU NEED PROFESSIONAL AUTO REPAIR?
+              </p>
+              <p class="form-map-title-bottom">Schedule Appointment!</p>
             </div>
-            <div>
-              <input
-                type="text"
-                id="make"
-                placeholder="Vehicle Year, Make & Model"
-              />
-              <select name="estimates" id="estimates">
-                <optgroup>
-                  <option value="free-estimate">Free Estimate</option>
-                  <option value="engine-repair">Engine Repair</option>
-                  <option value="check-engine">
+            <form class="form">
+              <div class="form-left-div">
+                <input
+                  type="text"
+                  id="name"
+                  class="input-style"
+                  placeholder="Your Full Name"
+                  required
+                />
+                <input
+                  type="email"
+                  id="email"
+                  class="input-style"
+                  placeholder="Your Email Address"
+                  required
+                />
+                <input
+                  type="tel"
+                  id="tel"
+                  class="input-style"
+                  minlength="10"
+                  maxlength="10"
+                  placeholder="Your Phone Number"
+                  required
+                />
+              </div>
+              <div class="form-right-div">
+                <input
+                  type="text"
+                  id="make"
+                  class="input-style"
+                  placeholder="Vehicle Year, Make & Model"
+                  required
+                />
+                <select
+                  name="estimates"
+                  id="estimates"
+                  class="input-style select"
+                  required
+                >
+                  <option value="free-estimate" class="option">
+                    Free Estimate
+                  </option>
+                  <option value="engine-repair" class="option">
+                    Engine Repair
+                  </option>
+                  <option value="check-engine" class="option">
                     Check Engine Light Diagnostics
                   </option>
-                  <option value="ac-repair">AC Repair</option>
-                  <option value="brake-service">Brake Service</option>
-                  <option value="transmission-repair">
+                  <option value="ac-repair" class="option">AC Repair</option>
+                  <option value="brake-service" class="option">
+                    Brake Service
+                  </option>
+                  <option value="transmission-repair" class="option">
                     Transmission Repair
                   </option>
-                  <option value="30-60-90k">
+                  <option value="30-60-90k" class="option">
                     30k/60k/90k Scheduled Maintenance
                   </option>
-                  <option value="oil-change">Oil Change & Tune Up</option>
-                  <option value="alignment-tire">
+                  <option value="oil-change" class="option">
+                    Oil Change & Tune Up
+                  </option>
+                  <option value="alignment-tire" class="option">
                     Alignment & Tire Service
                   </option>
-                  <option value="alignment-tire">Official CA Smog Check</option>
-                  <option value="other">Other</option>
-                </optgroup>
-              </select>
+                  <option value="alignment-tire" class="option">
+                    Official CA Smog Check
+                  </option>
+                  <option value="other" class="option">Other</option>
+                </select>
 
-              <input type="datetime-local" id="date-time" />
-            </div>
-          </form>
+                <input
+                  type="datetime-local"
+                  id="date-time"
+                  class="input-style date"
+                  required
+                />
+              </div>
+              <div>
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+
           <div class="location">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.406920877034!2d-117.59809638440936!3d33.87917243427748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcc85f8da4b03b%3A0x8a6623408589da3d!2sPrecision%20Import%20Auto%20Repair!5e0!3m2!1sen!2sus!4v1609903645173!5m2!1sen!2sus"
@@ -398,5 +446,7 @@
         </div>
       </section>
     </div>
+
+    <script src="../js/main.js"></script>
   </body>
 </html>
