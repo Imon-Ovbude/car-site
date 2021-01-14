@@ -13,6 +13,10 @@
   font-weight: bold;
 }
 
+.none {
+  display: none;
+}
+
 // ---------HEADER SECTION
 header {
   width: 100%;
@@ -407,8 +411,23 @@ header {
       }
 
       .to-top {
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
         font-size: 1.6rem;
-        color: $white;
+        color: $black;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: none;
+      }
+
+      .to-top:hover,
+      .to-top:focus {
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background-color: $grey;
       }
     }
   }
