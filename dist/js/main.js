@@ -32,7 +32,7 @@ const scrollWatch = () => {
   window.addEventListener('scroll', () => {
     const scrollable = window.scrollY;
 
-    if (scrollable === 0) {
+    if (scrollable < 1000) {
       toTop.classList.add('none');
     } else {
       toTop.classList.remove('none');
