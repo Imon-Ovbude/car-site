@@ -477,4 +477,131 @@
       }
     }
   }
+
+  // -----SERVICES PAGE
+  .services-repair {
+    width: 100%;
+
+    .top-services-div {
+      padding: 100px 0;
+      width: 100%;
+      background-color: $navy-blue;
+
+      .top-services-wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
+        color: $white;
+
+        .top-services-section {
+          display: flex;
+          flex-direction: column;
+
+          .top-services-div1 {
+            margin-bottom: 100px;
+
+            h3 {
+              font-size: 1.4rem;
+            }
+
+            p {
+              font-size: 5rem;
+              font-weight: bold;
+            }
+          }
+
+          .top-services-div2 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: 'section1 section2 section3';
+            column-gap: 40px;
+            font-size: 1.5rem;
+            line-height: 1.4;
+            height: 500px;
+            margin-bottom: 50px;
+            padding-bottom: 60px;
+            border-bottom: 1px solid $lightGrey;
+
+            .first {
+              grid-area: section1;
+              align-self: center;
+            }
+
+            .second {
+              grid-area: section2;
+              align-self: center;
+            }
+
+            .third {
+              grid-area: section3;
+              background-image: url(/dist/img/AutoRepairShop.jpg);
+            }
+          }
+        }
+
+        .top-lower-services-section {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          column-gap: 40px;
+          font-size: 1.6rem;
+          line-height: 1.4;
+
+          .right-div {
+            p {
+              // margin-bottom: 40px;
+            }
+          }
+        }
+      }
+    }
+
+    .bottom-services-div {
+      width: 100%;
+      background-color: $dark-blue;
+      color: $white;
+      padding: 100px 0;
+
+      .bottom-services-wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
+
+        .bottom-services-section {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          column-gap: 40px;
+          font-size: 1.6rem;
+          line-height: 1.4;
+
+          .bottom-left-div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .left-div-top {
+              p {
+                font-size: 3.5rem;
+                line-height: 1;
+              }
+            }
+          }
+
+          .bottom-right-div {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+              'top'
+              'bottom';
+
+            .bottom-right-div1 {
+              grid-area: top;
+            }
+
+            .bottom-right-div2 {
+              grid-area: bottom;
+              align-self: flex-end;
+            }
+          }
+        }
+      }
+    }
+  }
 }
