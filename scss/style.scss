@@ -712,10 +712,11 @@
         background-color: rgba($darkGrey, 0.7);
         position: fixed;
         top: 0;
-        right: 0;
+        right: -300px;
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: ease-out 800ms;
 
         .hamburger-menu {
           width: 35px;
@@ -726,14 +727,47 @@
           cursor: pointer;
           display: flex;
           flex-direction: column;
-          justify-content: space-between;
+          justify-content: space-around;
 
           .line {
             width: 100%;
             height: 5px;
             background-color: $gold;
+            transition: all 800ms;
+          }
+
+          .change.line1 {
+            transform: rotateZ(-405deg) translate(-8px, 6px);
+          }
+
+          .change.line2 {
+            opacity: 0;
+          }
+
+          .change.line3 {
+            transform: rotateZ(405deg) translate(-8px, -6px);
           }
         }
+
+        .nav-list {
+          .nav-item {
+            .link {
+              font-size: 2rem;
+              color: $black;
+              font-weight: 500;
+            }
+
+            .link:hover {
+              color: $gold;
+              transition: ease 300ms;
+            }
+          }
+        }
+      }
+
+      .navbar.change {
+        right: 0;
+        transition: ease-in-out 800ms;
       }
     }
 
