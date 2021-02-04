@@ -120,7 +120,6 @@
       object-fit: contain;
 
       .carousel-item {
-        height: 800px;
         .text {
           position: absolute;
           top: 20px;
@@ -175,6 +174,12 @@
   .statement-section {
     background-color: $dark-blue;
     height: 500px;
+    position: relative;
+
+    @media only screen and (max-width: 1100px) {
+      height: 100%;
+      padding-bottom: 50px;
+    }
 
     .statement-wrapper {
       display: grid;
@@ -184,6 +189,12 @@
       color: $white;
       grid-template-columns: repeat(2, 1fr);
       align-items: center;
+
+      @media only screen and (max-width: 1100px) {
+        max-width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+      }
 
       .statement-first-div {
         .welcome {
@@ -201,6 +212,10 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
+
+        @media only screen and (max-width: 1100px) {
+          grid-template-columns: 1fr;
+        }
 
         p {
           line-height: 1.2;
@@ -231,6 +246,10 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 3px;
 
+        @media only screen and (max-width: 1100px) {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
         img {
           max-width: 100%;
           height: auto;
@@ -242,6 +261,11 @@
         grid-template-columns: repeat(3, 1fr);
         max-width: 1400px;
 
+        @media only screen and (max-width: 1100px) {
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(3, 1fr);
+        }
+
         .attribute-div {
           display: flex;
           justify-content: center;
@@ -250,6 +274,11 @@
           height: 150px;
           margin-top: 100px;
           margin-bottom: 100px;
+
+          @media only screen and (max-width: 1100px) {
+            margin-top: 0;
+            margin-bottom: 0;
+          }
 
           svg {
             margin-right: 10px;
@@ -265,6 +294,10 @@
         .attribute-div:nth-child(2) {
           border-left: 2px solid #9fa0a0;
           border-right: 2px solid #9fa0a0;
+
+          @media only screen and (max-width: 1100px) {
+            border: none;
+          }
         }
       }
     }
@@ -282,6 +315,11 @@
       display: grid;
       grid-template-columns: 40% 60%;
       margin: 0 auto;
+
+      @media only screen and (max-width: 1100px) {
+        max-width: 90%;
+        grid-template-columns: 1fr;
+      }
 
       .second-statement-first-div {
         display: flex;
@@ -306,6 +344,12 @@
         font-size: 1.6rem;
         line-height: 1.2;
 
+        @media only screen and (max-width: 1100px) {
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(2, 1fr);
+          row-gap: 20px;
+        }
+
         .left-div {
           display: flex;
           flex-direction: column;
@@ -326,6 +370,11 @@
       display: flex;
       justify-content: space-between;
 
+      @media only screen and (max-width: 1100px) {
+        max-width: 90%;
+        flex-direction: column;
+      }
+
       .form-map-title {
         line-height: 1.2;
         margin-bottom: 20px;
@@ -344,6 +393,10 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         font-size: 1.8rem;
+
+        @media only screen and (max-width: 1100px) {
+          margin-bottom: 40px;
+        }
 
         .input-style {
           width: 90%;
@@ -383,6 +436,12 @@
           border-radius: 30px;
           background-color: $gold;
           color: $white;
+        }
+      }
+
+      @media only screen and (max-width: 1100px) {
+        .location {
+          text-align: center;
         }
       }
     }
@@ -436,6 +495,7 @@
           width: 50px;
           border-radius: 50%;
           border: none;
+          z-index: 1000;
         }
 
         .to-top:hover,
