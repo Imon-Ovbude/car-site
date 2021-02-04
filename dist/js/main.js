@@ -11,6 +11,9 @@ const navbar = document.querySelector('.navbar');
 const line1 = document.querySelector('.line1');
 const line2 = document.querySelector('.line2');
 const line3 = document.querySelector('.line3');
+const iframe = document.querySelector('.iframe');
+
+iframe.setAttribute('width', '90%');
 
 // Set Minimum Date And Time Attribute and Value
 function setDateAttr() {
