@@ -12,35 +12,43 @@ const line1 = document.querySelector('.line1');
 const line2 = document.querySelector('.line2');
 const line3 = document.querySelector('.line3');
 const iframe = document.querySelector('.iframe');
+const formMapSection = document.querySelector('.form-map-section');
 
-iframe.setAttribute('width', '90%');
+// Set Iframe Width
+const setIframeWidth = () => {
+  if (iframe) {
+    iframe.setAttribute('width', '90%');
+  }
+};
 
 // Set Minimum Date And Time Attribute and Value
-function setDateAttr() {
-  if (month < 10) {
-    month = '0' + month;
+const setDateAttr = () => {
+  if (formMapSection) {
+    if (month < 10) {
+      month = '0' + month;
+    }
+
+    if (day < 10) {
+      day = '0' + day;
+    }
+
+    if (mins < 10) {
+      mins = '0' + mins;
+    }
+
+    today = `${year}-${month}-${day}T${hours}:${mins}`;
+
+    dateTime.setAttribute('min', today);
+    dateTime.setAttribute('value', today);
   }
-
-  if (day < 10) {
-    day = '0' + day;
-  }
-
-  if (mins < 10) {
-    mins = '0' + mins;
-  }
-
-  today = `${year}-${month}-${day}T${hours}:${mins}`;
-
-  dateTime.setAttribute('min', today);
-  dateTime.setAttribute('value', today);
-}
+};
 
 // Back To Top Button
 const scrollWatch = () => {
   window.addEventListener('scroll', () => {
     const scrollable = window.scrollY;
 
-    if (scrollable < 1000) {
+    if (scrollable < 90) {
       toTop.classList.add('none');
     } else {
       toTop.classList.remove('none');
