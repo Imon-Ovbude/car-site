@@ -16,7 +16,7 @@ const formMapSection = document.querySelector('.form-map-section');
 
 // Set Iframe Width
 const setIframeWidth = () => {
-  if (iframe) {
+  if (formMapSection) {
     iframe.setAttribute('width', '90%');
   }
 };
@@ -75,3 +75,4 @@ hamburgerMenu.addEventListener('click', () => {
 
 scrollWatch();
 setDateAttr();
+setIframeWidth();

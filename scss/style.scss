@@ -668,6 +668,10 @@
         margin: 0 auto;
         color: $white;
 
+        @media only screen and (max-width: 1100px) {
+          width: 90%;
+        }
+
         .top-services-section {
           display: flex;
           flex-direction: column;
@@ -697,6 +701,16 @@
             padding-bottom: 60px;
             border-bottom: 1px solid $lightGrey;
 
+            @media only screen and (max-width: 1100px) {
+              grid-template-columns: 1fr;
+              grid-template-rows: repeat(2, 1fr);
+              grid-template-areas:
+                'section1'
+                'section2';
+              height: 100%;
+              column-gap: 0;
+            }
+
             .first {
               grid-area: section1;
               align-self: center;
@@ -710,16 +724,24 @@
             .third {
               grid-area: section3;
               background-image: url(/dist/img/AutoRepairShop.jpg);
+              background-size: cover no-repeat;
             }
           }
         }
 
         .top-lower-services-section {
           display: grid;
+          position: relative;
           grid-template-columns: repeat(2, 1fr);
           column-gap: 40px;
           font-size: 1.6rem;
           line-height: 1.4;
+
+          @media only screen and (max-width: 1100px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            row-gap: 20px;
+          }
 
           .right-div {
             p {
@@ -740,12 +762,22 @@
         max-width: 1400px;
         margin: 0 auto;
 
+        @media only screen and (max-width: 1100px) {
+          width: 90%;
+        }
+
         .bottom-services-section {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           column-gap: 40px;
           font-size: 1.6rem;
           line-height: 1.4;
+
+          @media only screen and (max-width: 1100px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            row-gap: 20px;
+          }
 
           .bottom-left-div {
             display: flex;
@@ -767,6 +799,10 @@
               'top'
               'bottom';
 
+            @media only screen and (max-width: 1100px) {
+              row-gap: 20px;
+            }
+
             .bottom-right-div1 {
               grid-area: top;
             }
@@ -774,6 +810,10 @@
             .bottom-right-div2 {
               grid-area: bottom;
               align-self: flex-end;
+
+              @media only screen and (max-width: 1100px) {
+                align-self: flex-start;
+              }
             }
           }
         }
