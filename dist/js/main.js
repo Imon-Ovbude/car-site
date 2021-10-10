@@ -57,13 +57,13 @@ const scrollWatch = () => {
   });
 };
 
-function scrollToTop() {
+const scrollToTop = () => {
   window.scrollTo({
     top: 0,
     left: 0,
     behavior: 'smooth',
   });
-}
+};
 
 // Hamburger Menu
 hamburgerMenu.addEventListener('click', () => {
