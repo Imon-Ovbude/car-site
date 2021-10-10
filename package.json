@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
@@ -20,6 +21,7 @@
   "homepage": "https://imon-ovbude.github.io/car-site",
   "dependencies": {
     "gh-pages": "^3.2.3",
-    "gitignore": "^0.7.0"
+    "gitignore": "^0.7.0",
+    "node-sass": "^6.0.1"
   }
 }
