@@ -16,7 +16,7 @@ const formMapSection = document.querySelector('.form-map-section');
 
 // Set Iframe Width
 const setIframeWidth = () => {
-  if (formMapSection) {
+  if (screen.width < 700) {
     iframe.setAttribute('width', '90%');
   }
 };
