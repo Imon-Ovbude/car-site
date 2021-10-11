@@ -598,6 +598,9 @@ table {
   .wrapper .form-map-section .form-map-wrapper .location {
     text-align: center;
   }
+  .wrapper .form-map-section .form-map-wrapper .location .iframe {
+    width: 98%;
+  }
 }
 .wrapper .footer {
   width: 100%;
