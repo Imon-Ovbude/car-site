@@ -5,7 +5,7 @@
   "main": "index.js",
   "homepage": "https://Imon-Ovbude.github.io/car-site/",
   "scripts": {
-    "sass": "node-sass -w scss/ -o sass/ --recursive",
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
