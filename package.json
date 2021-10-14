@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Imon-Ovbude.github.io/car-site",
+  "homepage": "https://Imon-Ovbude.github.io/car-site/",
   "scripts": {
     "sass": "node-sass -w scss/ -o sass/ --recursive",
     "deploy": "gh-pages -d dist"
