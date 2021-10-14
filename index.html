@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3d023dda22.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../scss/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <title>Car Site</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Hamburger Menu -->
+      <div class="hamburger-container">
+        <nav class="navbar">
+          <div class="hamburger-menu">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li class="nav-item nav-link nav-link-1 active">
+              <a class="link" href="index.html"
+                ><span class="active">HOME</span></a
+              >
+            </li>
+            <li class="nav-item nav-link nav-link-1">
+              <a class="link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item nav-link nav-link-1">
+              <a class="link" href="services-repair.html">SERVICES</a>
+            </li>
+            <li class="nav-item nav-link nav-link-1">
+              <a class="link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Header Section -->
+      <header class="header">
+        <nav class="top-header">
+          <div class="top-header-div">
+            <p class="logo"><span class="precision">PRECISION</span> IMPORT</p>
+            <ul>
+              <li class="nav-link nav-link-1 active">
+                <a href="index.html"><span class="active">HOME</span></a>
+              </li>
+              <li class="nav-link nav-link-1">
+                <a href="about.html">ABOUT</a>
+              </li>
+              <li class="nav-link nav-link-1">
+                <a href="services-repair.html">SERVICES</a>
+              </li>
+              <li class="nav-link nav-link-1">
+                <a href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+            <ul>
+              <li class="nav-link nav-link-2">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li class="nav-link nav-link-2">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="nav-link nav-link-2">
+                <a href="#"><i class="fab fa-yelp"></i></a>
+              </li>
+            </ul>
+            <ul>
+              <li><i class="fas fa-phone-alt"></i></li>
+              <li class="phone-number">(333) 333-3333</li>
+            </ul>
+          </div>
+        </nav>
+        <div class="bottom-header">
+          <div class="bottom-header-div">
+            <ul>
+              <li class="bottom-header-top-li">
+                <i class="fas fa-check-double"></i> Specializing in Japanese
+                auto repair
+              </li>
+              <li class="bottom-header-top-li">
+                <i class="fas fa-check-double"></i> Official CA smog check
+                facility
+              </li>
+              <li class="bottom-header-top-li">
+                <i class="fas fa-check-double"></i> Family owned and operated
+              </li>
+            </ul>
+            <ul>
+              <li class="bottom-header-bottom-li">
+                1545 Yorba Ave, Corona, CA 92881
+              </li>
+              <li class="bottom-header-bottom-li">Mon-Fri: 7am-6pm</li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- Carousel Section -->
+      <section class="carousel-section">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item item active">
+              <img
+                src="./img/2017_lexus_lc_500h_1_1920x1080.jpg"
+                class="d-block h-auto w-100"
+                alt="2014 lexus 500h"
+              />
+              <div
+                class="
+                  carousel-caption
+                  d-flex
+                  text-start
+                  carousel-text-div
+                  text
+                "
+              >
+                <h3 class="carousel-h3">PRECISSION IMPORT OFFERS</h3>
+                <p class="carousel-p">
+                  full-service import & domestic auto repair & maintenance
+                </p>
+                <button class="carousel-button">
+                  <i class="fas fa-angle-double-right angle-right"></i> AUTO
+                  REPAIR
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item item">
+              <img
+                src="./img/2019-infinity-q50.jpg"
+                class="d-block w-100"
+                alt="2020 infinity q50"
+              />
+              <div
+                class="
+                  carousel-caption
+                  d-flex
+                  text-start
+                  carousel-text-div
+                  text
+                "
+              >
+                <h3 class="carousel-h3">WE PROVIDE THE HIGHEST LEVEL</h3>
+                <p class="carousel-p">of quality service that you can trust</p>
+                <button class="carousel-button">
+                  <i class="fas fa-angle-double-right angle-right"></i> FULL
+                  SERVICE
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item item">
+              <img
+                src="./img/orange-acura-nsx.jpg"
+                class="d-block w-100"
+                alt="2020 acura nsx"
+              />
+              <div
+                class="
+                  carousel-caption
+                  d-flex
+                  text-start
+                  carousel-text-div
+                  text
+                "
+              >
+                <h3 class="carousel-h3">WE CAN QIUCKLY AND ACCURATELY</h3>
+                <p class="carousel-p">diagnose and repair any vehicle issue</p>
+                <button class="carousel-button">
+                  <i class="fas fa-angle-double-right angle-right"></i> DIAGNOSE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Statement Section -->
+      <section class="statement-section">
+        <div class="statement-wrapper">
+          <div class="statement-first-div">
+            <p class="welcome">WELCOME TO PRECISION</p>
+            <p>Corona's Choice in Auto Repair</p>
+          </div>
+          <div class="statement-second-div">
+            <p>
+              Whether you drive a Ford or a Jaguar, you deserve the best auto
+              service in the county.
+              <span>Precision import Auto Repair</span> is the leading auto shop
+              for domestic and imported vehicles in Corona. More over, all of
+              Riverside County comes to us for our top-quality
+              <span>auto repair</span> and <span>maintenance</span> services. if
+              your check engine light is on or you're just due for an oil
+              change, we are the shop for you.
+            </p>
+            <p>
+              Precision Import Auto Repair is a family owned and operated shop
+              staffed with ASE certified technicians. We offer expert repair
+              with quality customer service that can't be beat. We are also an
+              official California <span>smog check facility</span>, helping keep
+              your older vehicles ready for the road. Our expertise in auto
+              repair makes sure that every vehicle runs smoothly by the time it
+              leaves our shop.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="emblem-section">
+        <div class="emblem-wrapper">
+          <div class="image-wrapper">
+            <img src="./img/audi-emblem.jpg" alt="" />
+            <img src="./img/bentley-emblem.jpg" alt="" />
+            <img src="./img/bmw-emblem.jpg" alt="" />
+            <img src="./img/honda-emblem.jpg" alt="" />
+            <img src="./img/jaguar-emblem.jpg" alt="" />
+            <img src="./img/landrover-emblem.jpg" alt="" />
+            <img src="./img/mercedes-emblem.jpg" alt="" />
+            <img src="./img/mini-emblem.jpg" alt="" />
+            <img src="./img/porsche-emblem.jpg" alt="" />
+            <img src="./img/saab-emblem.jpg" alt="" />
+            <img src="./img/volvo-emblem.jpg" alt="" />
+            <img src="./img/vw-emblem.jpg" alt="" />
+          </div>
+          <div class="attributes">
+            <div class="attribute-div">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                focusable="false"
+                width="1em"
+                height="1em"
+                style="
+                  -ms-transform: rotate(360deg);
+                  -webkit-transform: rotate(360deg);
+                  transform: rotate(360deg);
+                "
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 16 16"
+              >
+                <g fill="#626262">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.773 3.485l-.78-.184l-2.108 2.096l-1.194-1.216l2.056-2.157l-.18-.792a4.42 4.42 0 0 0-1.347-.228a3.64 3.64 0 0 0-1.457.28a3.824 3.824 0 0 0-1.186.84a3.736 3.736 0 0 0-.875 1.265a3.938 3.938 0 0 0 0 2.966a335.341 335.341 0 0 0-6.173 6.234c-.21.275-.31.618-.284.963a1.403 1.403 0 0 0 .464.967c.124.135.272.247.437.328c.17.075.353.118.538.127c.316-.006.619-.126.854-.337c1.548-1.457 4.514-4.45 6.199-6.204c.457.194.948.294 1.444.293a3.736 3.736 0 0 0 2.677-1.133a3.885 3.885 0 0 0 1.111-2.73a4.211 4.211 0 0 0-.196-1.378zM2.933 13.928a.31.31 0 0 1-.135.07a.437.437 0 0 1-.149 0a.346.346 0 0 1-.144-.057a.336.336 0 0 1-.114-.11c-.14-.143-.271-.415-.14-.568c1.37-1.457 4.191-4.305 5.955-6.046c.1.132.21.258.328.376c.118.123.245.237.38.341c-1.706 1.75-4.488 4.564-5.98 5.994zm11.118-9.065c.002.765-.296 1.5-.832 2.048a2.861 2.861 0 0 1-4.007 0a2.992 2.992 0 0 1-.635-3.137A2.748 2.748 0 0 1 10.14 2.18a2.76 2.76 0 0 1 1.072-.214h.254L9.649 3.839v.696l1.895 1.886h.66l1.847-1.816v.258zM3.24 6.688h1.531l.705.717l.678-.674l-.665-.678V6.01l.057-1.649l-.22-.437l-2.86-1.882l-.591.066l-.831.849l-.066.599l1.838 2.918l.424.215zm-.945-3.632L4.609 4.58L4.57 5.703H3.494L2.002 3.341l.293-.285zm7.105 6.96l.674-.673l3.106 3.185a1.479 1.479 0 0 1 0 2.039a1.404 1.404 0 0 1-1.549.315a1.31 1.31 0 0 1-.437-.315l-3.142-3.203l.679-.678l3.132 3.194a.402.402 0 0 0 .153.105a.477.477 0 0 0 .359 0a.403.403 0 0 0 .153-.105a.436.436 0 0 0 .1-.153a.525.525 0 0 0 .036-.184a.547.547 0 0 0-.035-.184a.436.436 0 0 0-.1-.153L9.4 10.016z"
+                  />
+                </g>
+              </svg>
+              <p><span>Full-Service</span> auto repair shot</p>
+            </div>
+            <div class="attribute-div">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                focusable="false"
+                width="1em"
+                height="1em"
+                style="
+                  -ms-transform: rotate(360deg);
+                  -webkit-transform: rotate(360deg);
+                  transform: rotate(360deg);
+                "
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 36 36"
+              >
+                <path
+                  d="M32 6H4a2 2 0 0 0-2 2v20a2 2 0 0 0 2 2h15l.57-.7l.93-1.14l-.09-.16H4V8h28v8.56a8.41 8.41 0 0 1 2 1.81V8a2 2 0 0 0-2-2z"
+                  class="clr-i-outline clr-i-outline-path-1"
+                  fill="#626262"
+                />
+                <path
+                  class="clr-i-outline clr-i-outline-path-2"
+                  d="M7 12h17v1.6H7z"
+                  fill="#626262"
+                />
+                <path
+                  class="clr-i-outline clr-i-outline-path-3"
+                  d="M7 16h11v1.6H7z"
+                  fill="#626262"
+                />
+                <path
+                  class="clr-i-outline clr-i-outline-path-4"
+                  d="M7 23h10v1.6H7z"
+                  fill="#626262"
+                />
+                <path
+                  d="M27.46 17.23a6.36 6.36 0 0 0-4.4 11l-1.94 2.37l.9 3.61l3.66-4.46a6.26 6.26 0 0 0 3.55 0l3.66 4.46l.9-3.61l-1.94-2.37a6.36 6.36 0 0 0-4.4-11zm0 10.68a4.31 4.31 0 1 1 4.37-4.31a4.35 4.35 0 0 1-4.37 4.31z"
+                  class="clr-i-outline clr-i-outline-path-5"
+                  fill="#626262"
+                />
+              </svg>
+              <p><span>ASE certified</span> mechanics</p>
+            </div>
+            <div class="attribute-div">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                focusable="false"
+                width="1em"
+                height="1em"
+                style="
+                  -ms-transform: rotate(360deg);
+                  -webkit-transform: rotate(360deg);
+                  transform: rotate(360deg);
+                "
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 64 64"
+              >
+                <path
+                  d="M8.783 41.535c8.403 8.401 21.644 8.987 30.734 1.78l1.894 1.892l-1.573 1.572l12.844 12.843c-.478.756-.685 1.338-.446 1.575l.703.702c1.143 1.145 10.104-7.819 8.961-8.962l-.703-.701c-.237-.238-.818-.033-1.572.445L46.779 39.838l-1.572 1.572l-1.893-1.893c7.206-9.091 6.621-22.333-1.779-30.735c-9.044-9.043-23.708-9.043-32.752 0c-9.045 9.046-9.043 23.709 0 32.753m2.729-30.022c7.536-7.537 19.759-7.537 27.293 0c7.537 7.535 7.537 19.758 0 27.293c-7.536 7.538-19.755 7.536-27.293 0c-7.534-7.537-7.536-19.756 0-27.293"
+                  fill="#626262"
+                />
+                <path
+                  d="M8.683 23.902a16.585 16.585 0 0 0 3.789 5.879c6.513 6.514 17.076 6.514 23.592-.003a16.61 16.61 0 0 0 4.813-10.243c2.256 5.949 1 12.926-3.79 17.716c-6.515 6.515-17.078 6.515-23.593 0C9.84 33.6 8.239 28.674 8.683 23.902"
+                  fill="#626262"
+                />
+              </svg>
+              <p><span>Quick</span> and accurate diagnostics</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="second-statement">
+        <div class="second-statement-wrapper">
+          <div class="second-statement-first-div">
+            <p class="problems">CAR PROBLEMS?</p>
+            <p class="problems-question-statement">
+              Visit Our Auto Repair Shop in Corona
+            </p>
+          </div>
+          <div class="second-statement-second-div">
+            <div class="left-div">
+              <p>
+                Our specialty may be European imports, but there is no problem
+                we can't fix for domestic and Asian brands as well. Precision
+                Import Auto Repair operates a state-of-the-art facility that can
+                serve any make and model you drive.
+              </p>
+              <p>
+                Our auto repair shop is one of the leaders in the car repair
+                industry because we have the rools and the skills to make your
+                car run like new.
+                <pan class="precision"
+                  >We take the time in every auto repair service</pan
+                >
+                to comprehensively understand the problem.
+              </p>
+            </div>
+            <div class="right-div">
+              <p>
+                From there, we can do it all: simple brake repairs, suspension
+                work, starter and alternator replacement, auto electric checks,
+                cooling system repair, and much more. While we may take the time
+                to get to the root of the problem, we complete our repairs and
+                maintenance within a fast turnaround time. For domestic,Asian
+                andEuropean auto repair,
+                <span class="precision">Precision Import Auto Repair</span> is
+                the best auro repair shop in the county.
+                <span class="precision">Drive in today</span> for emergency
+                assistance or call us now to schedule a repair instead.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Form Map Section -->
+      <section class="form-map-section">
+        <div class="form-map-wrapper">
+          <div>
+            <div class="form-map-title">
+              <p class="form-map-title-top precision">
+                YOU NEED PROFESSIONAL AUTO REPAIR?
+              </p>
+              <p class="form-map-title-bottom">Schedule Appointment!</p>
+            </div>
+            <form class="form">
+              <div class="form-left-div">
+                <input
+                  type="text"
+                  id="name"
+                  class="input-style"
+                  placeholder="Your Full Name"
+                  required
+                />
+                <input
+                  type="email"
+                  id="email"
+                  class="input-style"
+                  placeholder="Your Email Address"
+                  required
+                />
+                <input
+                  type="tel"
+                  id="tel"
+                  class="input-style"
+                  minlength="10"
+                  maxlength="10"
+                  placeholder="Your Phone Number"
+                  required
+                />
+              </div>
+              <div class="form-right-div">
+                <input
+                  type="text"
+                  id="make"
+                  class="input-style"
+                  placeholder="Vehicle Year, Make & Model"
+                  required
+                />
+                <select
+                  name="estimates"
+                  id="estimates"
+                  class="input-style select"
+                  required
+                >
+                  <option value="free-estimate" class="option">
+                    Free Estimate
+                  </option>
+                  <option value="engine-repair" class="option">
+                    Engine Repair
+                  </option>
+                  <option value="check-engine" class="option">
+                    Check Engine Light Diagnostics
+                  </option>
+                  <option value="ac-repair" class="option">AC Repair</option>
+                  <option value="brake-service" class="option">
+                    Brake Service
+                  </option>
+                  <option value="transmission-repair" class="option">
+                    Transmission Repair
+                  </option>
+                  <option value="30-60-90k" class="option">
+                    30k/60k/90k Scheduled Maintenance
+                  </option>
+                  <option value="oil-change" class="option">
+                    Oil Change & Tune Up
+                  </option>
+                  <option value="alignment-tire" class="option">
+                    Alignment & Tire Service
+                  </option>
+                  <option value="alignment-tire" class="option">
+                    Official CA Smog Check
+                  </option>
+                  <option value="other" class="option">Other</option>
+                </select>
+
+                <input
+                  type="datetime-local"
+                  id="date-time"
+                  class="input-style date"
+                  required
+                />
+              </div>
+              <div>
+                <button class="form-button" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="location">
+            <iframe
+              class="iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.406920877034!2d-117.59809638440936!3d33.87917243427748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcc85f8da4b03b%3A0x8a6623408589da3d!2sPrecision%20Import%20Auto%20Repair!5e0!3m2!1sen!2sus!4v1609903645173!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="footer">
+        <div class="overlay-color">
+          <div class="footer-wrapper">
+            <ul class="footer-list">
+              <li class="footer-item"><a href="index.html">HOME</a></li>
+              <li class="footer-item"><a href="contact.html">CONTACT</a></li>
+              <li class="footer-item">
+                <a href="privacy.html">PRIVACY POLICY</a>
+              </li>
+            </ul>
+            <button class="to-top none">
+              <i class="material-icons">arrow_upward</i>
+            </button>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
