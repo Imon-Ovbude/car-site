@@ -779,7 +779,7 @@ table {
 }
 .wrapper .services-repair .top-services-div .top-services-wrapper .top-services-section .top-services-div2 .third {
   grid-area: section3;
-  background-image: url("/dist/img/AutoRepairShop.jpg");
+  background-image: url("../dist/img/AutoRepairShop.jpg");
   background-size: cover no-repeat;
 }
 .wrapper .services-repair .top-services-div .top-services-wrapper .top-lower-services-section {
@@ -816,8 +816,6 @@ table {
 .wrapper .services-repair .bottom-services-div .bottom-services-wrapper .bottom-services-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  -moz-column-gap: 40px;
-       column-gap: 40px;
   font-size: 1.6rem;
   line-height: 1.4;
 }
@@ -829,8 +827,6 @@ table {
   }
 }
 .wrapper .services-repair .bottom-services-div .bottom-services-wrapper .bottom-services-section .bottom-left-div {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 .wrapper .services-repair .bottom-services-div .bottom-services-wrapper .bottom-services-section .bottom-left-div .left-div-top p {
@@ -853,11 +849,13 @@ table {
 }
 .wrapper .services-repair .bottom-services-div .bottom-services-wrapper .bottom-services-section .bottom-right-div .bottom-right-div2 {
   grid-area: bottom;
-  align-self: flex-end;
+  align-self: flex-start;
+  margin-top: 38px;
 }
 @media only screen and (max-width: 1100px) {
   .wrapper .services-repair .bottom-services-div .bottom-services-wrapper .bottom-services-section .bottom-right-div .bottom-right-div2 {
     align-self: flex-start;
+    margin-top: 0;
   }
 }
 .wrapper .contact {
