@@ -871,6 +871,13 @@ table {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 900px) {
+  .wrapper .contact .contact-wrapper {
+    flex-direction: column;
+    row-gap: 50px;
+    justify-content: center;
+  }
+}
 .wrapper .contact .contact-wrapper .contact-left-div .contact-us-top {
   font-size: 1.7rem;
 }
@@ -886,6 +893,13 @@ table {
        column-gap: 30px;
   row-gap: 10px;
   grid-template-areas: "div1 div3" "div2 div4";
+}
+@media only screen and (max-width: 700px) {
+  .wrapper .contact .contact-wrapper .contact-right-div {
+    grid-template-columns: 1fr;
+    grid-template-areas: "div1" "div2" "div3" "div4";
+    margin: 0 auto;
+  }
 }
 .wrapper .contact .contact-wrapper .contact-right-div .right-div1 {
   grid-area: div1;
