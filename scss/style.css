@@ -121,7 +121,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -290,7 +290,7 @@ table {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
 }
 .wrapper .carousel-section .carousel-inner .carousel-item .text {
   position: absolute;
@@ -310,12 +310,7 @@ table {
   margin-bottom: 50px;
   font-weight: 700;
 }
-.wrapper
-  .carousel-section
-  .carousel-inner
-  .carousel-item
-  .text
-  .carousel-button {
+.wrapper .carousel-section .carousel-inner .carousel-item .text .carousel-button {
   border: none;
   font-size: 1.4rem;
   padding: 15px 30px;
@@ -323,18 +318,12 @@ table {
   background-color: #cca13f;
   color: #fff;
 }
-.wrapper
-  .carousel-section
-  .carousel-inner
-  .carousel-item
-  .text
-  .carousel-button
-  .angle-right {
+.wrapper .carousel-section .carousel-inner .carousel-item .text .carousel-button .angle-right {
   width: 40px;
   position: relative;
   text-align: start;
   -webkit-animation: slideRight;
-  animation: slideRight;
+          animation: slideRight;
 }
 @-webkit-keyframes slideRight {
   0% {
@@ -463,20 +452,12 @@ table {
 .wrapper .emblem-section .emblem-wrapper .attributes .attribute-div span {
   font-weight: bold;
 }
-.wrapper
-  .emblem-section
-  .emblem-wrapper
-  .attributes
-  .attribute-div:nth-child(2) {
+.wrapper .emblem-section .emblem-wrapper .attributes .attribute-div:nth-child(2) {
   border-left: 2px solid #9fa0a0;
   border-right: 2px solid #9fa0a0;
 }
 @media only screen and (max-width: 1100px) {
-  .wrapper
-    .emblem-section
-    .emblem-wrapper
-    .attributes
-    .attribute-div:nth-child(2) {
+  .wrapper .emblem-section .emblem-wrapper .attributes .attribute-div:nth-child(2) {
     border: none;
   }
 }
@@ -498,56 +479,35 @@ table {
     grid-template-columns: 1fr;
   }
 }
-.wrapper
-  .second-statement
-  .second-statement-wrapper
-  .second-statement-first-div {
+.wrapper .second-statement .second-statement-wrapper .second-statement-first-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   row-gap: 10px;
 }
-.wrapper
-  .second-statement
-  .second-statement-wrapper
-  .second-statement-first-div
-  .problems {
+.wrapper .second-statement .second-statement-wrapper .second-statement-first-div .problems {
   font-size: 2rem;
 }
-.wrapper
-  .second-statement
-  .second-statement-wrapper
-  .second-statement-first-div
-  .problems-question-statement {
+.wrapper .second-statement .second-statement-wrapper .second-statement-first-div .problems-question-statement {
   font-size: 4rem;
   font-weight: bold;
 }
-.wrapper
-  .second-statement
-  .second-statement-wrapper
-  .second-statement-second-div {
+.wrapper .second-statement .second-statement-wrapper .second-statement-second-div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   -moz-column-gap: 20px;
-  column-gap: 20px;
+       column-gap: 20px;
   font-size: 1.6rem;
   line-height: 1.2;
 }
 @media only screen and (max-width: 1100px) {
-  .wrapper
-    .second-statement
-    .second-statement-wrapper
-    .second-statement-second-div {
+  .wrapper .second-statement .second-statement-wrapper .second-statement-second-div {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
     row-gap: 20px;
   }
 }
-.wrapper
-  .second-statement
-  .second-statement-wrapper
-  .second-statement-second-div
-  .left-div {
+.wrapper .second-statement .second-statement-wrapper .second-statement-second-div .left-div {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -572,18 +532,10 @@ table {
   line-height: 1.2;
   margin-bottom: 20px;
 }
-.wrapper
-  .form-map-section
-  .form-map-wrapper
-  .form-map-title
-  .form-map-title-top {
+.wrapper .form-map-section .form-map-wrapper .form-map-title .form-map-title-top {
   font-size: 1.7rem;
 }
-.wrapper
-  .form-map-section
-  .form-map-wrapper
-  .form-map-title
-  .form-map-title-bottom {
+.wrapper .form-map-section .form-map-wrapper .form-map-title .form-map-title-bottom {
   font-size: 2rem;
   color: #fff;
 }
@@ -611,27 +563,14 @@ table {
   margin-bottom: 30px;
   cursor: pointer;
 }
-.wrapper
-  .form-map-section
-  .form-map-wrapper
-  .form
-  .input-style.select
-  option.option {
+.wrapper .form-map-section .form-map-wrapper .form .input-style.select option.option {
   font-size: 1rem;
 }
-.wrapper
-  .form-map-section
-  .form-map-wrapper
-  .form
-  .input-style::-moz-placeholder {
+.wrapper .form-map-section .form-map-wrapper .form .input-style::-moz-placeholder {
   color: #f3f3f3;
   font-size: 1.6rem;
 }
-.wrapper
-  .form-map-section
-  .form-map-wrapper
-  .form
-  .input-style:-ms-input-placeholder {
+.wrapper .form-map-section .form-map-wrapper .form .input-style:-ms-input-placeholder {
   color: #f3f3f3;
   font-size: 1.6rem;
 }
@@ -666,7 +605,7 @@ table {
 .wrapper .footer {
   width: 100%;
   height: 800px;
-  background-image: url('../dist/img/mountain-bmw.jpg');
+  background-image: url("../dist/img/mountain-bmw.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -739,13 +678,13 @@ table {
   color: #fff;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: 'title paragraph paragraph';
+  grid-template-areas: "title paragraph paragraph";
 }
 @media only screen and (max-width: 1100px) {
   .wrapper .learn-more .learn {
     max-width: 90%;
     grid-template-columns: 1fr;
-    grid-template-areas: 'title' 'paragraph';
+    grid-template-areas: "title" "paragraph";
     row-gap: 30px;
   }
 }
@@ -765,7 +704,7 @@ table {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   -moz-column-gap: 40px;
-  column-gap: 40px;
+       column-gap: 40px;
   font-size: 1.8rem;
   line-height: 1.2;
 }
@@ -793,52 +732,26 @@ table {
     width: 90%;
   }
 }
-.wrapper
-  .services-repair
-  .top-services-div
-  .top-services-wrapper
-  .top-services-section {
+.wrapper .services-repair .top-services-div .top-services-wrapper .top-services-section {
   display: flex;
   flex-direction: column;
 }
-.wrapper
-  .services-repair
-  .top-services-div
-  .top-services-wrapper
-  .top-services-section
-  .top-services-div1 {
+.wrapper .services-repair .top-services-div .top-services-wrapper .top-services-section .top-services-div1 {
   margin-bottom: 100px;
 }
-.wrapper
-  .services-repair
-  .top-services-div
-  .top-services-wrapper
-  .top-services-section
-  .top-services-div1
-  h3 {
+.wrapper .services-repair .top-services-div .top-services-wrapper .top-services-section .top-services-div1 h3 {
   font-size: 1.4rem;
 }
-.wrapper
-  .services-repair
-  .top-services-div
-  .top-services-wrapper
-  .top-services-section
-  .top-services-div1
-  p {
+.wrapper .services-repair .top-services-div .top-services-wrapper .top-services-section .top-services-div1 p {
   font-size: 5rem;
   font-weight: bold;
 }
-.wrapper
-  .services-repair
-  .top-services-div
-  .top-services-wrapper
-  .top-services-section
-  .top-services-div2 {
+.wrapper .services-repair .top-services-div .top-services-wrapper .top-services-section .top-services-div2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: 'section1 section2 section3';
+  grid-template-areas: "section1 section2 section3";
   -moz-column-gap: 40px;
-  column-gap: 40px;
+       column-gap: 40px;
   font-size: 1.5rem;
   line-height: 1.4;
   height: 500px;
@@ -847,70 +760,39 @@ table {
   border-bottom: 1px solid #f3f3f3;
 }
 @media only screen and (max-width: 1100px) {
-  .wrapper
-    .services-repair
-    .top-services-div
-    .top-services-wrapper
-    .top-services-section
-    .top-services-div2 {
+  .wrapper .services-repair .top-services-div .top-services-wrapper .top-services-section .top-services-div2 {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 'section1' 'section2';
+    grid-template-areas: "section1" "section2";
     height: 100%;
     -moz-column-gap: 0;
-    column-gap: 0;
+         column-gap: 0;
   }
 }
-.wrapper
-  .services-repair
-  .top-services-div
-  .top-services-wrapper
-  .top-services-section
-  .top-services-div2
-  .first {
+.wrapper .services-repair .top-services-div .top-services-wrapper .top-services-section .top-services-div2 .first {
   grid-area: section1;
   align-self: center;
 }
-.wrapper
-  .services-repair
-  .top-services-div
-  .top-services-wrapper
-  .top-services-section
-  .top-services-div2
-  .second {
+.wrapper .services-repair .top-services-div .top-services-wrapper .top-services-section .top-services-div2 .second {
   grid-area: section2;
   align-self: center;
 }
-.wrapper
-  .services-repair
-  .top-services-div
-  .top-services-wrapper
-  .top-services-section
-  .top-services-div2
-  .third {
+.wrapper .services-repair .top-services-div .top-services-wrapper .top-services-section .top-services-div2 .third {
   grid-area: section3;
-  background-image: url(/dist/img/AutoRepairShop.jpg);
+  background-image: url("/dist/img/AutoRepairShop.jpg");
   background-size: cover no-repeat;
 }
-.wrapper
-  .services-repair
-  .top-services-div
-  .top-services-wrapper
-  .top-lower-services-section {
+.wrapper .services-repair .top-services-div .top-services-wrapper .top-lower-services-section {
   display: grid;
   position: relative;
   grid-template-columns: repeat(2, 1fr);
   -moz-column-gap: 40px;
-  column-gap: 40px;
+       column-gap: 40px;
   font-size: 1.6rem;
   line-height: 1.4;
 }
 @media only screen and (max-width: 1100px) {
-  .wrapper
-    .services-repair
-    .top-services-div
-    .top-services-wrapper
-    .top-lower-services-section {
+  .wrapper .services-repair .top-services-div .top-services-wrapper .top-lower-services-section {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
     row-gap: 20px;
@@ -931,98 +813,50 @@ table {
     width: 90%;
   }
 }
-.wrapper
-  .services-repair
-  .bottom-services-div
-  .bottom-services-wrapper
-  .bottom-services-section {
+.wrapper .services-repair .bottom-services-div .bottom-services-wrapper .bottom-services-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   -moz-column-gap: 40px;
-  column-gap: 40px;
+       column-gap: 40px;
   font-size: 1.6rem;
   line-height: 1.4;
 }
 @media only screen and (max-width: 1100px) {
-  .wrapper
-    .services-repair
-    .bottom-services-div
-    .bottom-services-wrapper
-    .bottom-services-section {
+  .wrapper .services-repair .bottom-services-div .bottom-services-wrapper .bottom-services-section {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
     row-gap: 20px;
   }
 }
-.wrapper
-  .services-repair
-  .bottom-services-div
-  .bottom-services-wrapper
-  .bottom-services-section
-  .bottom-left-div {
+.wrapper .services-repair .bottom-services-div .bottom-services-wrapper .bottom-services-section .bottom-left-div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.wrapper
-  .services-repair
-  .bottom-services-div
-  .bottom-services-wrapper
-  .bottom-services-section
-  .bottom-left-div
-  .left-div-top
-  p {
+.wrapper .services-repair .bottom-services-div .bottom-services-wrapper .bottom-services-section .bottom-left-div .left-div-top p {
   font-size: 3.5rem;
   line-height: 1;
 }
-.wrapper
-  .services-repair
-  .bottom-services-div
-  .bottom-services-wrapper
-  .bottom-services-section
-  .bottom-right-div {
+.wrapper .services-repair .bottom-services-div .bottom-services-wrapper .bottom-services-section .bottom-right-div {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: 'top' 'bottom';
+  grid-template-areas: "top" "bottom";
 }
 @media only screen and (max-width: 1100px) {
-  .wrapper
-    .services-repair
-    .bottom-services-div
-    .bottom-services-wrapper
-    .bottom-services-section
-    .bottom-right-div {
+  .wrapper .services-repair .bottom-services-div .bottom-services-wrapper .bottom-services-section .bottom-right-div {
     row-gap: 20px;
   }
 }
-.wrapper
-  .services-repair
-  .bottom-services-div
-  .bottom-services-wrapper
-  .bottom-services-section
-  .bottom-right-div
-  .bottom-right-div1 {
+.wrapper .services-repair .bottom-services-div .bottom-services-wrapper .bottom-services-section .bottom-right-div .bottom-right-div1 {
   grid-area: top;
 }
-.wrapper
-  .services-repair
-  .bottom-services-div
-  .bottom-services-wrapper
-  .bottom-services-section
-  .bottom-right-div
-  .bottom-right-div2 {
+.wrapper .services-repair .bottom-services-div .bottom-services-wrapper .bottom-services-section .bottom-right-div .bottom-right-div2 {
   grid-area: bottom;
   align-self: flex-end;
 }
 @media only screen and (max-width: 1100px) {
-  .wrapper
-    .services-repair
-    .bottom-services-div
-    .bottom-services-wrapper
-    .bottom-services-section
-    .bottom-right-div
-    .bottom-right-div2 {
+  .wrapper .services-repair .bottom-services-div .bottom-services-wrapper .bottom-services-section .bottom-right-div .bottom-right-div2 {
     align-self: flex-start;
   }
 }
@@ -1050,9 +884,9 @@ table {
   grid-template-columns: repeat(2, 1fr);
   line-height: 1.6;
   -moz-column-gap: 30px;
-  column-gap: 30px;
+       column-gap: 30px;
   row-gap: 10px;
-  grid-template-areas: 'div1 div3' 'div2 div4';
+  grid-template-areas: "div1 div3" "div2 div4";
 }
 .wrapper .contact .contact-wrapper .contact-right-div .right-div1 {
   grid-area: div1;
@@ -1098,4 +932,4 @@ table {
 .wrapper .contact .contact-wrapper .contact-right-div .right-div3 .div-info,
 .wrapper .contact .contact-wrapper .contact-right-div .right-div4 .div-info {
   font-size: 1.4rem;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
