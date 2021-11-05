@@ -187,16 +187,10 @@
 
   // ----------Carousel Section
   .carousel-section {
-    @media only screen and (max-width: 750px) {
-      display: none;
-    }
-    .carousel {
-      max-height: 700px;
-    }
     .carousel-inner {
       width: 100%;
       height: 100%;
-      // object-fit: ;
+      object-fit: contain;
 
       .carousel-item {
         .text {
@@ -246,6 +240,10 @@
           }
         }
       }
+    }
+
+    @media only screen and (max-width: 750px) {
+      display: none;
     }
   }
 
@@ -840,6 +838,8 @@
       }
 
       .contact-left-div {
+        margin: 0 auto;
+
         .contact-us-top {
           font-size: 1.7rem;
         }
