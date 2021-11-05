@@ -474,6 +474,7 @@ table {
   .wrapper .second-statement .second-statement-wrapper {
     max-width: 90%;
     grid-template-columns: 1fr;
+    row-gap: 20px;
   }
 }
 .wrapper .second-statement .second-statement-wrapper .second-statement-first-div {
